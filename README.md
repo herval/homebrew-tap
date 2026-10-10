@@ -1,9 +1,17 @@
 # herval/homebrew-tap
 
-Homebrew casks for [littleguys](https://github.com/herval/littleguys).
+Homebrew formulae and casks for [herval](https://github.com/herval)'s projects.
 
 ```bash
-brew install herval/tap/littleguys
+brew install herval/tap/<name>
 ```
 
-`Casks/littleguys.rb` is written by the littleguys release workflow on every `v*` tag, from [`packaging/homebrew/littleguys.rb`](https://github.com/herval/littleguys/blob/main/packaging/homebrew/littleguys.rb). Change it there, not here.
+## What's here
+
+| Name | Kind | What it is |
+|------|------|------------|
+| [littleguys](https://github.com/herval/littleguys) | cask | Menu bar home for OpenClaw, Hermes and ACP agents |
+
+## Adding a project
+
+Apps go in `Casks/`, CLIs and libraries in `Formula/`. Projects that release from CI keep the cask or formula source in their own repo and push it here on each release, using a fine-grained token with Contents: write on this repo. Edit those in the project's repo, not here. littleguys works this way, from [`packaging/homebrew/littleguys.rb`](https://github.com/herval/littleguys/blob/main/packaging/homebrew/littleguys.rb).
