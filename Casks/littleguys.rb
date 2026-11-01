@@ -1,6 +1,6 @@
 cask "littleguys" do
-  version "0.2.2"
-  sha256 "fed3fae7daef8064292ec21c212495c00327cc8cc082852b8f55544772c50874"
+  version "0.2.3"
+  sha256 "85193a859a6e967e4dee6978c1787ed7f294f12f8e6a81d1b095d367804731ba"
 
   url "https://github.com/herval/littleguys/releases/download/v#{version}/littleguys_#{version}_universal.dmg"
   name "littleguys"
